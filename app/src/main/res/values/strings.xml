@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WVS</string>
+
+    <string name="to_start_please_enter_these_informations">To start, Please enter these informations :</string>
+    <string name="in_km_h">KM/H</string>
+    <string name="_1_car_autonomy_100_charged">1) Car Autonomy (100 % Charged):</string>
+    <string name="_2_total_distance">2) Total Distance :</string>
+    <string name="in_km">KM</string>
+    <string name="_3_average_car_speed">3) Average car speed:</string>
+    <string name="alert_title">The total duration will be : </string>
+    <string name="validationerror">\"Please Enter a Number ! \"</string>
+    <string name="_4_time_to_charge_the_car">4) Time to charge the Car :</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="language">Language</string>
+    <string name="change_the_language">Change the Language</string>
+    <string name="english_deutsche">English/Deutsche</string>
+    <string name="change_language">Change Language</string>
+    <string name="calculate">Calculate !</string>
+    <string name="copyrights">Copyrights</string>
+</resources>

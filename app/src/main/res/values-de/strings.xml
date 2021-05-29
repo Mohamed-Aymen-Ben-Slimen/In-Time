@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">In Time</string>
+    <string name="to_start_please_enter_these_informations">Bitte geben Sie zunächst diese Informationen ein:</string>
+    <string name="in_km_h">KM/H</string>
+    <string name="_1_car_autonomy_100_charged">1) Autonomie (100% aufgeladen):</string>
+    <string name="_2_total_distance">2) Gesamtentfernung:</string>
+    <string name="in_km">KM</string>
+    <string name="_3_average_car_speed">3) Durchschnittliche Fahrzeuggeschwindigkeit:</string>
+    <string name="alert_title">Die Gesamtdauer beträgt: </string>
+    <string name="validationerror">\"Bitte gebe eine Nummer ein!\"</string>
+    <string name="_4_time_to_charge_the_car">4) Zeit, das Auto aufzuladen:</string>
+    <string name="language">Language</string>
+    <string name="change_the_language">Change the Language</string>
+    <string name="english_deutsche">English/Deutsche</string>
+    <string name="change_language">Sprache</string>
+    <string name="calculate">Berechnung !</string>
+    <string name="copyrights">© Urheberrecht ©</string>
+</resources>
