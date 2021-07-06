@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 import java.math.BigDecimal
 import java.math.RoundingMode
+import kotlin.math.ceil
 
 class MainActivity : AppCompatActivity() {
     lateinit var calculate: Button
@@ -224,15 +225,11 @@ class MainActivity : AppCompatActivity() {
                     }
 
                 } else {
-                    while (TotalDistance >= 0) {
-                        TotalDistance -= AutonomyValue
-                        Counter += 1
-                    }
-                    Result1 = BigDecimal(((Counter * TimeToCharging).toDouble()) +
-                            (((AutonomyValue * KmPerMinute).toDouble()) / 60)).setScale(2, RoundingMode.HALF_EVEN).toString()
+                    var r1 = TotalDistance / Speed.toDouble()
+                    var r2 = ceil( (TotalDistance / AutonomyValue.toDouble()) - 1)
+                    Result1 = BigDecimal(r1 + r2 * TimeToCharging).setScale(2, RoundingMode.HALF_EVEN).toString()
 
-                    Result2 = BigDecimal(((Counter * TimeToCharging).toDouble()) +
-                            (((AutonomyValue * KmPerMinute).toDouble()) / 60)).setScale(2, RoundingMode.HALF_EVEN).toString()
+                    Result2 = r2.toString()
                     if(Locale.getDefault().language.equals("de")){
                         withCustomStyle(it, " $Result2 stunden und  $Counter pause !")
                     } else {
