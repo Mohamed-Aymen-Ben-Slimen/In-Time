@@ -229,11 +229,11 @@ class MainActivity : AppCompatActivity() {
                     var r2 = ceil( (TotalDistance / AutonomyValue.toDouble()) - 1)
                     Result1 = BigDecimal(r1 + r2 * TimeToCharging).setScale(2, RoundingMode.HALF_EVEN).toString()
 
-                    Result2 = r2.toString()
+                    Result2 = r2.toInt().toString()
                     if(Locale.getDefault().language.equals("de")){
-                        withCustomStyle(it, " $Result2 stunden und  $Counter pause !")
+                        withCustomStyle(it, " $Result1 stunden und  $Result2 pause !")
                     } else {
-                        withCustomStyle(it, " $Result1 Hours includes  $Counter Breaks !")
+                        withCustomStyle(it, " $Result1 Hours includes  $Result2 Breaks !")
                     }
 
                 }
